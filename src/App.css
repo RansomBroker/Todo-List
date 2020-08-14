@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+
+.container{
+  background: url('./img/bg-mountain.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: lighter;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  margin: 1em;
+  background-color: #000000;
+  background: rgb(0,0,0);
+  background: linear-gradient(33deg, rgba(0,0,0,0.8575630081134016) 0%, rgba(0,0,0,0.5) 100%); 
+  backdrop-filter: blur(5px);
+  height: auto;
+}
+
+.border{
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.shadow{
+  -webkit-box-shadow: 0px 0px 36px 3px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 36px 3px rgba(0,0,0,1);
+  box-shadow: 0px 0px 36px 3px rgba(0,0,0,1);
+}
+
+.card-body{
+  padding: 8px 3em 8px 3em ;
+}
+
+.task-list{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.task{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
+
+.task span{
+  color:#cfcfcf;
+}
+
+.task-btn{
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 8px;
+}
+
+.btn-delete i{
+  color: #bd4848 ;
+  font-size: 16px;
+}
+
+.btn-edit i{
+  color: #bd9634 ;
+  font-size: 16px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.task-input{
+  padding: 15px 10px 10px 20px;
+  font-family: 'Josefin Sans', serif;
+  font-size: 16px;
+  color: rgb(199, 199, 199);
+  background-color: #1d222b;
+  border: 1px solid #444;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7px);
+}
+
+.buttons{
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.add-task-btn{
+  min-width: 100px;
+  min-height: 36px;
+  background-color: #1d2129;
+  color: rgb(209, 209, 209);
+  border: none;
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  outline: none;
+  cursor: pointer;
+  margin-right: 24px;
+}
+.clear-task-btn{
+  min-width: 100px;
+  min-height: 36px;
+  background-color: #771f1f;
+  color: rgb(209, 209, 209);
+  border: none;
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  outline: none;
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+.header-text{
+  color: #ccc;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 20px 60px 20px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.no-task{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  color: rgb(131, 131, 131);
+  font-weight: 400;
+}
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 24.99%;}
+.col-4{width: 33.32%;}
+.col-5{width: 41.65%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width:789px){
+  [class*="col-"] {
+      width: 91.66%;
+    }
+  
+  html{
+    font-size: 12px;
+  }
+  
+}
